@@ -38,19 +38,19 @@ Aşağıdaki diyagram çalışmanın metodolojik akışını göstermektedir:
 
 ```mermaid
 graph LR
-    subgraph Bagimsiz_Degiskenler [Bağımsız Değişkenler]
+    subgraph Bagimsiz_Degiskenler ["Bağımsız Değişkenler"]
         A[Ebeveyn Katılımı]
         B[Kaynaklara Erişim]
         C[Motivasyon Seviyesi]
         D[Önceki Skorlar]
     end
 
-    subgraph Araci_Degiskenler [Aracı Değişkenler (Davranışsal)]
+    subgraph Araci_Degiskenler ["Aracı Değişkenler (Davranışsal)"]
         E[Haftalık Çalışma Saati]
         F[Derse Devamlılık]
     end
 
-    subgraph Bagimli_Degisken [Bağımlı Değişken]
+    subgraph Bagimli_Degisken ["Bağımlı Değişken"]
         G((Sınav Puanı))
     end
 
