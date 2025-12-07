@@ -1,0 +1,43 @@
+# İşletim Sistemi Dosyaları
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Sanal Ortam (Virtual Environment)
+.venv/
+venv/
+env/
+
+# Frontend (Node.js / Next.js)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Backend
+backend/__pycache__/
+
+# Modeller (Kod ile tekrar üretilebildiği için repoda tutulması şart değildir, ancak boyut küçükse tutulabilir. İyi uygulama olarak ignore ediyoruz.)
+models/*.pkl
+
+# IDE Ayarları (VS Code, JetBrains vb.)
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Veri (Tercihe bağlı: Veri setiniz halka açık değilse burayı açın)
+# data/

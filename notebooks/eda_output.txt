@@ -1,0 +1,177 @@
+--- Veri Seti Genel Bilgileri ---
+Satýr Sayýsý: 6607
+Sütun Sayýsý: 20
+
+--- Ýlk 5 Satýr ---
+   Hours_Studied  Attendance  ...  Gender Exam_Score
+0             23          84  ...    Male         67
+1             19          64  ...  Female         61
+2             24          98  ...    Male         74
+3             29          89  ...    Male         71
+4             19          92  ...  Female         70
+
+[5 rows x 20 columns]
+
+--- Veri Tipleri ve Eksik Deðerler ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 6607 entries, 0 to 6606
+Data columns (total 20 columns):
+ #   Column                      Non-Null Count  Dtype 
+---  ------                      --------------  ----- 
+ 0   Hours_Studied               6607 non-null   int64 
+ 1   Attendance                  6607 non-null   int64 
+ 2   Parental_Involvement        6607 non-null   object
+ 3   Access_to_Resources         6607 non-null   object
+ 4   Extracurricular_Activities  6607 non-null   object
+ 5   Sleep_Hours                 6607 non-null   int64 
+ 6   Previous_Scores             6607 non-null   int64 
+ 7   Motivation_Level            6607 non-null   object
+ 8   Internet_Access             6607 non-null   object
+ 9   Tutoring_Sessions           6607 non-null   int64 
+ 10  Family_Income               6607 non-null   object
+ 11  Teacher_Quality             6529 non-null   object
+ 12  School_Type                 6607 non-null   object
+ 13  Peer_Influence              6607 non-null   object
+ 14  Physical_Activity           6607 non-null   int64 
+ 15  Learning_Disabilities       6607 non-null   object
+ 16  Parental_Education_Level    6517 non-null   object
+ 17  Distance_from_Home          6540 non-null   object
+ 18  Gender                      6607 non-null   object
+ 19  Exam_Score                  6607 non-null   int64 
+dtypes: int64(7), object(13)
+memory usage: 1.0+ MB
+None
+
+--- Eksik Deðerlerin Sayýsý ---
+Hours_Studied                  0
+Attendance                     0
+Parental_Involvement           0
+Access_to_Resources            0
+Extracurricular_Activities     0
+Sleep_Hours                    0
+Previous_Scores                0
+Motivation_Level               0
+Internet_Access                0
+Tutoring_Sessions              0
+Family_Income                  0
+Teacher_Quality               78
+School_Type                    0
+Peer_Influence                 0
+Physical_Activity              0
+Learning_Disabilities          0
+Parental_Education_Level      90
+Distance_from_Home            67
+Gender                         0
+Exam_Score                     0
+dtype: int64
+
+--- Ýstatistiksel Özet (Sayýsal) ---
+       Hours_Studied   Attendance  ...  Physical_Activity   Exam_Score
+count    6607.000000  6607.000000  ...        6607.000000  6607.000000
+mean       19.975329    79.977448  ...           2.967610    67.235659
+std         5.990594    11.547475  ...           1.031231     3.890456
+min         1.000000    60.000000  ...           0.000000    55.000000
+25%        16.000000    70.000000  ...           2.000000    65.000000
+50%        20.000000    80.000000  ...           3.000000    67.000000
+75%        24.000000    90.000000  ...           4.000000    69.000000
+max        44.000000   100.000000  ...           6.000000   101.000000
+
+[8 rows x 7 columns]
+
+--- Kategorik Deðerlerin Daðýlýmý ---
+
+Sütun: Parental_Involvement
+Parental_Involvement
+Medium    3362
+High      1908
+Low       1337
+Name: count, dtype: int64
+
+Sütun: Access_to_Resources
+Access_to_Resources
+Medium    3319
+High      1975
+Low       1313
+Name: count, dtype: int64
+
+Sütun: Extracurricular_Activities
+Extracurricular_Activities
+Yes    3938
+No     2669
+Name: count, dtype: int64
+
+Sütun: Motivation_Level
+Motivation_Level
+Medium    3351
+Low       1937
+High      1319
+Name: count, dtype: int64
+
+Sütun: Internet_Access
+Internet_Access
+Yes    6108
+No      499
+Name: count, dtype: int64
+
+Sütun: Family_Income
+Family_Income
+Low       2672
+Medium    2666
+High      1269
+Name: count, dtype: int64
+
+Sütun: Teacher_Quality
+Teacher_Quality
+Medium    3925
+High      1947
+Low        657
+Name: count, dtype: int64
+
+Sütun: School_Type
+School_Type
+Public     4598
+Private    2009
+Name: count, dtype: int64
+
+Sütun: Peer_Influence
+Peer_Influence
+Positive    2638
+Neutral     2592
+Negative    1377
+Name: count, dtype: int64
+
+Sütun: Learning_Disabilities
+Learning_Disabilities
+No     5912
+Yes     695
+Name: count, dtype: int64
+
+Sütun: Parental_Education_Level
+Parental_Education_Level
+High School     3223
+College         1989
+Postgraduate    1305
+Name: count, dtype: int64
+
+Sütun: Distance_from_Home
+Distance_from_Home
+Near        3884
+Moderate    1998
+Far          658
+Name: count, dtype: int64
+
+Sütun: Gender
+Gender
+Male      3814
+Female    2793
+Name: count, dtype: int64
+
+--- Korelasyon Analizi (Exam_Score ile) ---
+Exam_Score           1.000000
+Attendance           0.581072
+Hours_Studied        0.445455
+Previous_Scores      0.175079
+Tutoring_Sessions    0.156525
+Physical_Activity    0.027824
+Sleep_Hours         -0.017022
+Name: Exam_Score, dtype: float64
