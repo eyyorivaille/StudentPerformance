@@ -11,7 +11,15 @@ Bu uygulama, öğrencilerin başarılarını etkileyen faktörleri (örneğin ç
 *   **REST API:** FastAPI ile geliştirilmiş, modelin dış dünyayla konuşmasını sağlayan hızlı bir backend.
 *   **Modern Arayüz:** Next.js ve Tailwind CSS ile tasarlanmış şık ve duyarlı (responsive) bir kullanıcı arayüzü.
 
-## 🛠️ Teknolojiler
+## � Veri Seti ve Araştırma Hakkında
+Bu proje, Kaggle üzerinde bulunan **[Student Performance Factors](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)** veri seti kullanılarak geliştirilmiştir.
+
+*   **Veri Seti:** 6.607 lise öğrencisine ait anket ve sınav sonuçlarını içerir.
+*   **Hedef Değişken:** `Exam_Score` (Sınav Puanı)
+*   **Öne Çıkan Bulgular:** Yapılan analizler sonucunda, öğrenci başarısını en çok etkileyen faktörlerin **Derse Katılım (Attendance)** ve **Haftalık Çalışma Saati** olduğu tespit edilmiştir.
+*   **Metodoloji:** Veriler temizlendikten sonra Linear Regression modeli ile eğitilmiş ve %77 oranında doğruluk (R2 Score) elde edilmiştir.
+
+## �🛠️ Teknolojiler
 *   **Backend & ML:** Python, FastAPI, Scikit-learn, Pandas, Joblib
 *   **Frontend:** TypeScript, Next.js, Tailwind CSS
 *   **Veri Seti:** Student Performance Factors
