@@ -26,8 +26,8 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
 
 ### 2. Depoyu Klonlayın
 ```bash
-git clone https://github.com/eyyorivaille/student-performance-prediction.git
-cd student-performance-prediction
+git clone https://github.com/eyyorivaille/StudentPerformance.git
+cd StudentPerformance
 ```
 
 ### 3. Backend (API) Kurulumu
